@@ -30,12 +30,13 @@ function UserDataEntry() {
           >
             <div id="mc_embed_signup_scroll">
               <h2></h2>
-              <div className="indicates-required">
-                <span className="asterisk">*</span> indicates required
+              <div className="indicates-required mb-4 text-xs italic">
+                <span className="asterisk text-red-600">*</span> indicates
+                required
               </div>
-              <div className="mc-field-group">
+              <div className="mc-field-group flex flex-col gap-2">
                 <label htmlFor="mce-EMAIL">
-                  Email Address <span className="asterisk">*</span>
+                  Email Address <span className="asterisk text-red-600">*</span>
                 </label>
                 <input
                   type="email"
@@ -47,7 +48,7 @@ function UserDataEntry() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="mc-field-group">
+              <div className="mc-field-group flex flex-col gap-2">
                 <label htmlFor="mce-FNAME">First Name </label>
                 <input
                   type="text"
@@ -58,7 +59,7 @@ function UserDataEntry() {
                   onChange={(e) => setFirstName(e.target.value)}
                 />
               </div>
-              <div className="mc-field-group">
+              <div className="mc-field-group flex flex-col gap-2">
                 <label htmlFor="mce-LNAME">Last Name </label>
                 <input
                   type="text"
